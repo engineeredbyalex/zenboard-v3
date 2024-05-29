@@ -11,14 +11,14 @@ function StatsBox(props) {
                 <h4 className="">
                     {props.value}
                 </h4>
-                <div className=''>
-                    <h5 className={textColorWeek}>
+                <div className='flex gap-5'>
+                    <p className={textColorWeek}>
                         {props.percent_value > 0 ? (`${props.percent_value}% this month`) : (null)}
 
-                    </h5>
-                    <h5 className={textColorWeek}>
+                    </p>
+                    <p className={textColorWeek}>
                         {props.percent_value > 0 ? (`${props.percent_value}% this week`) : (null)}
-                    </h5>
+                    </p>
                 </div>
             </div>
         </div >

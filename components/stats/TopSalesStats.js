@@ -55,14 +55,16 @@ export default function TopSalesStats() {
     return (
         <div className="box">
             <h4 className=" black_text font-medium uppercase">Top 3 most sold products</h4>
-            <div >
+            <div className="gap-10 flex flex-col">
                 {topProducts.map(({ productId, count }) => {
                     const product = products.find(product => product._id === productId);
                     return (
-                        <div className="text-center flex flex-col items-center justify-center gap-5" key={productId}>
-                            <h5 className="grey_text">Name: {product ? product.title : 'Unknown'}</h5>
-                            <h5 className="grey_text">Quanitity: {count}</h5>
+                       
+                            <div className="text-center flex flex-col items-center justify-center" key={productId}>
+                            <h5 className="white_text">Name: {product ? product.title : 'Unknown'}</h5>
+                            <h5 className="white_text">Quanitity: {count}</h5>
                         </div>
+                       
                     );
                 })}
             </div>

@@ -170,5 +170,5 @@ input {
 
 
 .box {
-  @apply flex flex-col items-center justify-center py-3 px-6 w-full shadow-lg rounded-lg bg-black text-white
+  @apply flex flex-col items-center justify-center min-h-[8rem] py-3 px-6 w-full shadow-lg rounded-lg bg-black text-white
 }
