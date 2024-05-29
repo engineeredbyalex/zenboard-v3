@@ -259,7 +259,7 @@ export default function ProductForm({
           />
         </div>
         <div className="font-medium uppercase w-full flex items-center justify-center">
-          <h5>Extras</h5>
+          <h5>Extras - UNDER DEVELOPMENT</h5>
         </div>
         <div className="font-medium uppercase w-full flex items-center justify-center">
           <h5>Discounted Price</h5>
