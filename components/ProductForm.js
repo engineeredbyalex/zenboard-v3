@@ -158,21 +158,29 @@ export default function ProductForm({
                 onChange={(ev) => handlePropertyNameChange(ev, index)}
               />
               {property.values?.map((value, valueIndex) => (
-                <input
-                  key={valueIndex}
-                  type="text"
-                  placeholder="Property Value"
-                  value={value}
-                  onChange={(ev) => handlePropertyValueChange(ev, index, valueIndex)}
-                  className="border px-5"
-                />
+                <div key={valueIndex} className="flex gap-2 items-center">
+                  <input
+                    type="text"
+                    placeholder="Property Value"
+                    value={value}
+                    onChange={(ev) => handlePropertyValueChange(ev, index, valueIndex)}
+                    className="border px-5"
+                  />
+                  <button
+                    type="button"
+                    onClick={() => removePropertyValue(index, valueIndex)}
+                    className="bg-red-500 text-white px-2 py-1 rounded"
+                  >
+                    Remove
+                  </button>
+                </div>
               ))}
               <div className="flex items-center gap-5 w-full">
                 <button className="bg-black text-white font-medium uppercase w-[50%] rounded h-[3rem]" type="button" onClick={() => addPropertyValue(index)}>
                   Add Value
                 </button>
                 <button className="bg-black text-white font-medium uppercase w-[50%] rounded h-[3rem]" type="button" onClick={() => removeProperty(index)}>
-                  Delete
+                  Delete Property
                 </button>
               </div>
             </div>
@@ -183,7 +191,7 @@ export default function ProductForm({
           onClick={addProperty}
           className="bg-black text-white font-medium uppercase w-full rounded mt-10 h-[3rem]"
         >
-          Add property
+          Add Property
         </button>
       </div>
       <div className="font-medium uppercase w-full flex items-center justify-center">
