@@ -1,0 +1,174 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+body {
+  @apply m-0 p-0
+}
+
+input {
+  @apply bg-transparent border-black border-[0.1rem] py-[0.5rem] px-2 rounded-md w-full
+}
+/* Mobile-first approach */
+ h1 {
+        font-size: 2.2rem; /* Adjust according to your design */
+    }
+
+    h2 {
+        font-size: 2rem; /* Adjust according to your design */
+    }
+
+    h3 {
+        font-size: 1.7rem; /* Adjust according to your design */
+    }
+
+    h4 {
+        font-size: 1.5rem; /* Adjust according to your design */
+    }
+
+    h5 {
+        font-size: 1.3rem; /* Adjust according to your design */
+    }
+
+    p {
+        font-size: 1rem; /* Adjust according to your design */
+    }
+    li{
+      list-style: none;
+    }
+
+/* Desktop styles */
+@media screen and (min-width: 768px) {
+    h1 {
+        font-size: 2.5rem; /* Adjust according to your design */
+    }
+
+    h2 {
+        font-size: 2rem; /* Adjust according to your design */
+    }
+
+    h3 {
+        font-size: 1.7rem; /* Adjust according to your design */
+    }
+
+    h4 {
+        font-size: 1.5rem; /* Adjust according to your design */
+    }
+
+    h5 {
+        font-size: 1.3rem; /* Adjust according to your design */
+    }
+
+    p {
+        font-size: 1rem; /* Adjust according to your design */
+    }
+}
+.container {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.heading {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.order-list {
+  border: 1px solid #ccc;
+  padding: 10px;
+}
+
+.order-item {
+  padding: 10px;
+}
+
+.order-item {
+ @apply bg-anti-flash-white border border-gun-metal
+}
+
+
+.order-item .order-details .client-details {
+  margin-top: 10px;
+  font-style: italic;
+}
+
+.order-item .order-details .product-details {
+  margin-top: 10px;
+}
+
+.order-item .order-details .product-item {
+  margin-top: 5px;
+  border-bottom: 1px solid #ccc;
+  padding-bottom: 5px;
+}
+
+.order-item .order-details .product-item:last-child {
+  border-bottom: none;
+}
+
+.order-item .order-details .paid {
+  color: green;
+}
+
+.order-item .order-details .not-paid {
+  color: red;
+}
+/* Assuming your basic styles are defined elsewhere */
+.basic {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.basic th,
+.basic td {
+  padding: 8px 16px;
+  border-bottom: 1px solid #ddd;
+}
+
+.uppercase {
+  text-transform: uppercase;
+}
+
+.grey_text {
+  color: #888;
+}
+
+.dark_blue_text {
+  color: #336699;
+}
+
+.btn-primary {
+  background-color: #000000;
+  color: #fff;
+  padding: 8px 16px;
+  border-radius: 4px;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.btn-red {
+  background-color: #dc3545;
+  color: #fff;
+  padding: 8px 16px;
+  border-radius: 4px;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.btn-primary:hover,
+.btn-red:hover {
+  opacity: 0.8;
+}
+
+
+.box {
+  @apply flex flex-col items-center justify-center py-3 px-6 w-full shadow-lg rounded-lg bg-black text-white
+}
