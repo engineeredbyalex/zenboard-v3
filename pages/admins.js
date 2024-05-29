@@ -76,7 +76,8 @@ function AdminsPage() {
             adminEmails.map(adminEmail => (
               <div key={adminEmail._id} className="flex justify-between items-center">
                 <div className="text-left">{adminEmail.email}</div>
-                <div>{adminEmail.createdAt && prettyDate(adminEmail.createdAt)}</div>
+                {/* <div>{adminEmail.createdAt && prettyDate(adminEmail.createdAt)}</div> */}
+                <div>{adminEmail.createdAt}</div>
                 <div>
                   <button onClick={() => deleteAdmin(adminEmail._id, adminEmail.email)} className="btn-red">
                     Șterge
