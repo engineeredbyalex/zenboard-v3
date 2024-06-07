@@ -65,13 +65,7 @@ const LoginPage = () => {
                         <Link href={"/register"}>
                             <p className="text-sm mt-3 text-right hover:text-blue-500 transition-all ease-in-out">Don`t have an account? <span className="underline">Register</span></p>
                         </Link>
-                        <button onClick={() => signIn("credentials", {
-                            redirect: false,
-                            email: 'test69@test.com',
-                            password: 'test1234',
-                        })} className="w-full bg-green-500 py-2 px-3 rounded-md text-center cursor-pointer hover:bg-black transition-all ease-in-out">
-                            <p className="text-white uppercase font-bold">Test Mode</p>
-                        </button>
+  
                     </form>
                 </div>
             </div>

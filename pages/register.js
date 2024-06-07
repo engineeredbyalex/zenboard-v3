@@ -60,7 +60,7 @@ export default function RegisterPage() {
                         {error && (
                             <div className="bg-red-500 text-white w-full text-sm py-1 px-3 rounded-md mt-2">{error}</div>
                         )}
-                        <Link href={"/account"}>
+                        <Link href={"/"}>
                             <p className=" mt-3 text-right  transition-all ease-in-out">
                                 Already have an account ? <span className="underline">Login</span>
                             </p>

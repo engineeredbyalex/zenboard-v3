@@ -12,10 +12,10 @@ export default function Dashboard() {
         <div>
             <div className='w-full py-2 flex border-b border-light-gray'>
                 <h4 className='w-1/3 font-bold uppercase'>DashBoard</h4>
-                <div className='w-2/3 flex items-center justify-end gap-5'>
+                {/* <div className='w-2/3 flex items-center justify-end gap-5'>
                     <div className='cursor-pointer'><AiFillBell size={25} /></div>
                     <div className='cursor-pointer'><AiFillFolder size={25}  /></div>
-                </div>
+                </div> */}
              </div>
             <UserInfo />
             <HomeStats />
